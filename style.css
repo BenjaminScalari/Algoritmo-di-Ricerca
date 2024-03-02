@@ -1,6 +1,93 @@
 /* CSS RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Resetta il margine di tutti gli elementi */
+  padding: 0; /* Resetta il padding di tutti gli elementi */
+  box-sizing: border-box; /* Imposta il box-sizing a border-box per includere il padding e il bordo nell'altezza e nella larghezza */
+}
+
+/* FLEXBOX */
+.flex {
+  display: flex; /* Abilita il layout flessibile */
+}
+
+.flex-align {
+  align-items: center; /* Allinea gli elementi lungo l'asse trasversale */
+}
+
+.flex-justify {
+  justify-content: center; /* Allinea gli elementi lungo l'asse principale */
+}
+
+.flex-around {
+  justify-content: space-around; /* Distribuisce uniformemente lo spazio attorno agli elementi */
+}
+
+.flex-evenly {
+  justify-content: space-evenly; /* Distribuisce uniformemente lo spazio tra gli elementi */
+}
+
+.flex-column {
+  flex-direction: column; /* Imposta il layout flessibile in direzione di colonna */
+}
+
+body {
+  background-color: rgb(25, 25, 25); /* Imposta il colore di sfondo per il corpo della pagina */
+  height: 100vh; /* Imposta l'altezza al 100% della viewport */
+  width: 100vw; /* Imposta la larghezza al 100% della viewport */
+  font-family: Arial, Helvetica, sans-serif; /* Imposta il font predefinito per il corpo della pagina */
+}
+
+#container {
+  width: 75%; /* Imposta la larghezza del contenitore principale al 75% della larghezza della viewport */
+}
+
+h1,
+ul {
+  color: white; /* Imposta il colore del testo per gli elementi h1 e ul */
+}
+
+h1 {
+  padding: 25px 0; /* Imposta la spaziatura interna per l'intestazione */
+}
+
+#input-container,
+button {
+  margin-bottom: 25px; /* Aggiunge un margine inferiore per il contenitore degli input e il pulsante */
+}
+
+#input-container {
+  width: 100%; /* Imposta la larghezza al 100% per il contenitore degli input */
+  position: sticky; /* Imposta il contenitore degli input in posizione fissa */
+}
+
+input,
+button {
+  height: 50px; /* Imposta l'altezza per gli input e il pulsante */
+  border-radius: 25px; /* Aggiunge bordi arrotondati */
+  background-color: transparent; /* Imposta lo sfondo trasparente */
+  font-size: large; /* Imposta la dimensione del carattere */
+}
+
+input {
+  width: 35%; /* Imposta la larghezza per l'input */
+  border: 5px solid blueviolet; /* Imposta lo spessore e il colore del bordo dell'input */
+  color: white; /* Imposta il colore del testo per l'input */
+  text-align: center; /* Allinea il testo al centro */
+}
+
+button {
+  width: 15%; /* Imposta la larghezza per il pulsante */
+  border: 5px solid white; /* Imposta lo spessore e il colore del bordo del pulsante */
+  color: blueviolet; /* Imposta il colore del testo per il pulsante */
+}
+
+#results-container {
+  max-height: 500px; /* Imposta l'altezza massima dell'area dei risultati */
+  overflow-y: auto; /* Abilita lo scrolling verticale se i risultati superano l'altezza massima */
+}
+
+li,
+p {
+  padding: 10px; /* Imposta la spaziatura interna per gli elementi li e p */
+  font-size: large; /* Imposta la dimensione del carattere per gli elementi li e p */
 }

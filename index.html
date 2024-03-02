@@ -6,13 +6,28 @@
   <title>Cerca Lavoro</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="flex flex-justify flex-align action flex-column">
 
-  <input type="text" id="location" placeholder="Location">
-  <input type="text" id="titoloLavorativo" placeholder="Titolo Lavorativo">
-  <button value="cerca">Cerca</button>
-  <ul id="results"></ul>
+  <div id="container" class="flex flex-justify flex-align action flex-column">
 
+    <!-- Titolo -->
+    <h1>Cerca Lavoro</h1>
+
+    <!-- Input per la posizione e il titolo lavorativo -->
+    <div id="input-container" class="flex flex-evenly">
+      <input type="text" id="location" placeholder="Location">
+      <input type="text" id="titoloLavorativo" placeholder="Titolo Lavorativo">
+    </div>
+    
+    <!-- Pulsante di ricerca -->
+    <button value="cerca">Cerca</button>
+
+  </div>
+
+  <!-- Lista dei risultati -->
+  <div id="results-container">
+    <ul id="results"></ul>
+  </div>
 
   <script src="script.js"></script>
 
